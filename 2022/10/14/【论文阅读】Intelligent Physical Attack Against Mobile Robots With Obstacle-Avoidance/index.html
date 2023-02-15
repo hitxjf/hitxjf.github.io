@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance | JiaFan's Blog</title><meta name="author" content="Fun"><meta name="copyright" content="Fun"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance标题：Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance作者： Yushan Li et al.机构：上海交通大学来源：TRO 2022  🏷️">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance">
+<meta property="og:url" content="http://example.com/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/index.html">
+<meta property="og:site_name" content="JiaFan&#39;s Blog">
+<meta property="og:description" content="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance标题：Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance作者： Yushan Li et al.机构：上海交通大学来源：TRO 2022  🏷️">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/sjtu.png">
+<meta property="article:published_time" content="2022-10-14T10:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-15T10:58:31.485Z">
+<meta property="article:author" content="Fun">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/sjtu.png"><link rel="shortcut icon" href="/img/ironman.png"><link rel="canonical" href="http://example.com/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-02-15 18:58:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/sjtu.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">JiaFan's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-14T10:00:00.000Z" title="发表于 2022-10-14 18:00:00">2022-10-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-02-15T10:58:31.485Z" title="更新于 2023-02-15 18:58:31">2023-02-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="【论文阅读】Intelligent-Physical-Attack-Against-Mobile-Robots-With-Obstacle-Avoidance"><a href="#【论文阅读】Intelligent-Physical-Attack-Against-Mobile-Robots-With-Obstacle-Avoidance" class="headerlink" title="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance"></a>【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance</h1><h1 id="标题：Intelligent-Physical-Attack-Against-Mobile-Robots-With-Obstacle-Avoidance"><a href="#标题：Intelligent-Physical-Attack-Against-Mobile-Robots-With-Obstacle-Avoidance" class="headerlink" title="标题：Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance"></a>标题：Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance</h1><h4 id="作者：-Yushan-Li-et-al"><a href="#作者：-Yushan-Li-et-al" class="headerlink" title="作者： Yushan Li et al."></a>作者： Yushan Li et al.</h4><h4 id="机构：上海交通大学"><a href="#机构：上海交通大学" class="headerlink" title="机构：上海交通大学"></a>机构：上海交通大学</h4><p>来源：TRO 2022</p>
+<hr>
+<h1 id="🏷️摘要"><a href="#🏷️摘要" class="headerlink" title="🏷️摘要"></a>🏷️摘要</h1><p>近年来，移动机器人的安全问题引起了广泛关注。在本文中，我们提出了一种智能的物理攻击（physical attack）方法，通过从外部观察（指用一个天花板上的相机识别Tag获取机器人位置）学习受害机器人（victim robot）的避障机制（ obstacle-avoidance mechanism），将受害机器人困在预设位置。我们工作的新颖之处在于，揭示了具有智能和先进设计的基于物理的攻击（physical-based attack）而无需事先了解系统的动力学或访问内部系统，会对移动机器人产生真正的威胁。在传统的网络空间安全中，这种攻击无法通过反措施进行处理。我们提出的攻击方法的基础是主动探索受害者机器人与环境的复杂交互特征，在对其行为进行有限的观察以学习其避障策略。然后，我们提出了最短路径（ shortest-path ）和hands-off攻击算法，从巨大的运动空间中寻找有效的攻击路径，分别以较低的路径长度和活动时间成本实现诱导受害者机器人到陷阱的目标。证明了算法的收敛性，并进一步推导了攻击性能界限。大量仿真和实物实验证明了所提出的攻击方法的有效性，并呼吁未来对机器人系统的物理威胁和防御策略有进一步的研究。</p>
+<h1 id="🏷️Introduction"><a href="#🏷️Introduction" class="headerlink" title="🏷️Introduction"></a>🏷️Introduction</h1><p>移动机器人（集群）综合了通信、计算、控制的能力以实现在现实世界的各种操作，可以将其看作一个典型的<strong>网络物理系统cyber-physical system (CPS）</strong>。不管是单个机器人还是机器人集群，它们在工业和军事领域的应用越来越广泛，因为存在着潜在的恶意外部攻击，他们的安全性变得至关重要。</p>
+<p>本文研究了一种新型的针对移动机器人的智能物理攻击方法，不依赖于任何先验知识。攻击者的目标是从外部观察中了解受害者机器人的避障机制，然后利用它将受害者机器人愚弄到预设陷阱中。这个问题的灵感来自机器人与物理环境的内在交互性质及其安全问题。一方面，先前关于移动机器人安全的研究主要是从网络空间的角度进行的[2] [3]，而物理攻击较少受到关注，但却非常重要。现实世界中的移动机器人普遍需要与物理环境交互[4]。通过伪装成障碍物接近受害机器人，不可避免地会产生避障行为，为困住受害者机器人提供支持。另一方面，许多防御技术都假定可能的攻击事先是强大的[5]、[6]，在获得稳健的安全性能的同时会产生更多成本，例如硬件计算负担。事实上，如果攻击被认为几乎不可能发动，那么就不需要设计复杂的对策以及性能下降，从而更好地指导系统防御设计。所以本文提出的物理攻击方法是很难防御的。</p>
+<p>尽管本文中的攻击问题与经典的追击回避问题[7]、[8]、[9]和羊群问题[10]、[11]、[12]有一些相似的特征，但我们指出，它们的应用场景和基本模型公式仍然存在重大差异。首先，这里的物理攻击不仅仅是控制机器人捕捉或跟踪受害者机器人，还要诱导受害者机器人移动到预设的陷阱位置。第二，与前面的工作不同，这些工作通常假设可以获得关于交互模型的全部或部分知识，<strong>本文中的攻击问题没有关于受害者机器人的先验知识</strong>。首先需要主动学习必要的避障知识，使攻击更具普遍性，并适用于大多数避障机制，这是本文的一个重要而独特的部分。此外，与直接拦截（如导弹制导[13]）或解码和操纵通信消息（尤其是当控制通信受到强加密[14]、[15]保护时）相比，本文的物理攻击方法可行性更高、更隐蔽、经济成本更低，带来了严重威胁。</p>
+<p>为了系统地设计和评估对移动机器人的智能物理攻击，必须解决三大挑战。</p>
+<ul>
+<li>首先，攻击者不知道支持攻击的前提信息（如障碍物检测范围和目标位置），这使得传统技术（如参数辨识和模型预测控制）难以建立攻击模型。</li>
+<li>第二，攻击者和受害者机器人在运动空间中相互影响，难以找到满足攻击要求的可行解空间。</li>
+<li>第三，即使找到可行的解空间，也很难优化策略设计，以低攻击成本实现最终目的。</li>
+</ul>
+<p>本文是[16]中所述初步工作的扩展，提供了模型学习、攻击设计和性能分析的详细和严格处理，以及新颖的仿真结果。本文的主要贡献如下</p>
+<h1 id="🏷️主要工作及贡献"><a href="#🏷️主要工作及贡献" class="headerlink" title="🏷️主要工作及贡献"></a>🏷️主要工作及贡献</h1><ul>
+<li>我们研究了仅利用外部观察而不依赖任何系统动力学的先验信息，对移动机器人进行智能和高级物理攻击的可能性。以通用避障机制为攻击接口，提出了一种包括知识学习和攻击实现的系统攻击方案。</li>
+<li>我们提出了一种基于有意激励的学习方法来获取避障知识。通过描述避障行为并将攻击者伪装成障碍物，我们演示了如何激发受害机器人的各种避障反应。基于对这一过程的观察，我们建立了反映潜在机制的特征数据对，并通过基于学习的方法进一步回归出受害者机器人的避障机制。</li>
+<li>我们分别以攻击路径长度和活动周期为目标，设计了两种驱动陷阱攻击算法。我们从下降搜索的角度证明了攻击算法的收敛性。在理论上进一步推导了关于最优代价的算法的性能界限。进行了大量仿真和实际实验，以说明所提出的攻击的有效性。</li>
+</ul>
+<p>从更大的意义上讲，本文通过外部观察和激励揭示了系统安全的脆弱性。由于避障行为对于移动机器人与环境交互是必不可少的，因此当机器人事先不知道恶意行为时，很难防御所提出的攻击，因为攻击者在攻击过程中并不总是持续活动，而是间歇性活动。因此，我们的工作为从物理方面探索针对移动机器人的更多潜在和高级攻击奠定了基础，并为指导未来的防御设计提供了更深入的见解。</p>
+<h1 id="🏷️Related-Work"><a href="#🏷️Related-Work" class="headerlink" title="🏷️Related Work"></a>🏷️Related Work</h1><h2 id="1-CPS-security-网络物理系统的安全性"><a href="#1-CPS-security-网络物理系统的安全性" class="headerlink" title="1 CPS security 网络物理系统的安全性"></a>1 CPS security 网络物理系统的安全性</h2><p>安全性显示了系统应对恶意行为或意外事件的能力[17]。在文献中，针对移动机器人的攻击<strong>主要来自网络空间</strong>，大致可分为三类：拒绝服务攻击、重放攻击和欺骗攻击[2]。在这些攻击中，通信信道被阻塞/中断[18]，或者控制数据和测量被破坏/改变[19]，从而在关键和对抗场景中危及系统。已作出许多努力来设计相应的对策。例如，Pasqualetti等人[6]描述了无法检测和无法识别的攻击，并设计了相应的检测过滤器。Chang等人[20]考虑了受攻击节点集可以随时间变化的安全估计问题。考虑到存在机器人故障[21]、[22]或不良队形变化[23]、[24]，开发了机器人队形的运动同步方法。在[25]，部署了一组机器人来驱赶敌方空中袭击者，以保护安全关键的基础设施。<strong>然而，现有的大多数研究都依赖于这样的假设，即攻击者具有一些知识或可以访问机器人系统。</strong>例如，恶意代理知道系统结构或节点状态[5]，或者通过网络传输的数据包已损坏[26]、[27]。然而在实际中，这些假设可能不再成立。</p>
+<p>近年来，出现了隐形<strong>物理攻击</strong>，并带来了真正的威胁，其中物理组件的目标是危害甚至摧毁系统。例如，GPS传感器读数可能会受到GPS欺骗攻击的干扰[28]，[29]。人为设计的噪声会改变陀螺仪传感器数据，导致无人机坠毁[30]。存储在内存（例如EEPROM、闪存）中的重要信息也可能在设备没有任何损坏的情况下因加热存储单元而导致损坏[31]。<strong>与网络攻击相比，这些物理攻击具有更广泛的适用性</strong>，而传统来自计算机安全社区的检测技术通常无法有效处理这些问题[1]。请注意，<strong>这些新出现的物理攻击仍然是初级的，不够智能</strong>。例如，攻击是利用传感器的独特机制针对特定传感器设计的，无法推广。此外，这些旨在干扰系统性能的物理攻击是以“开环”方式设计的，没有复杂的控制设计，这促使本文的工作以智能的方式研究可能的物理攻击。</p>
+<h2 id="2-Obstacle-avoidance-mechanism-避障机制"><a href="#2-Obstacle-avoidance-mechanism-避障机制" class="headerlink" title="2 Obstacle-avoidance mechanism  避障机制"></a>2 Obstacle-avoidance mechanism  避障机制</h2><p>目前已经有多种移动机器人的避障方法，例如，基于势场的方法[32]、基于遗传算法的方法[33]、基于模糊逻辑的方法[34]、基于神经网络的方法[35]等（详细综述见[36]和[37]）。根据其算法特点，类似于[38]，我们将这些算法分为两种主要类型：<strong>确定性方法</strong>（例如，人工势方法（APM）、基于学习的方法）；基于搜索的方法（例如，动态窗口方法（DWA）、遗传方法、进化算法）。前者是确定的模型驱动，针对当前情况的解决方案是唯一的，并且可以快速找到。后者的核心思想是搜索所有可行解，并根据评价函数选择最佳解，这是一个耗时的过程。无论采用何种避障方法，其本质都是绕过障碍物并调整到目标点的轨迹，其避障策略会直接泄漏给外部观察（external observation）。我们的攻击算法设计充分利用了这一特性。</p>
+<p>总之，在事先不了解系统的情况下，从物理方面研究智能通用的攻击手段仍然是一个开放并关键的问题。</p>
+<h1 id="🏷️准备与问题描述"><a href="#🏷️准备与问题描述" class="headerlink" title="🏷️准备与问题描述"></a>🏷️准备与问题描述</h1><p>这章内容主要是机器人运动学模型与避障机制建模</p>
+<h2 id="1-符号定义"><a href="#1-符号定义" class="headerlink" title="1 符号定义"></a>1 符号定义</h2><p><img src="/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/image_TB-hygmfeu.png" alt></p>
+<h2 id="2-移动机器人的运动控制建模"><a href="#2-移动机器人的运动控制建模" class="headerlink" title="2 移动机器人的运动控制建模"></a>2 移动机器人的运动控制建模</h2><p>作者分别讨论了非完整状态约束（nonholonomic）的机器人和完整状态约束（holonomic）的机器人的运动学模型，并指出由于nonholonomic的机器人瞬时运动受到横向限制，这使得其控制比后者更具有挑战性。使用$p=[x,y,\theta]$来表示一个机器人的姿态，运动直接由线速度$v$和角速度$\omega$控制，运动学模型可以表示为</p>
+<script type="math/tex; mode=display">
+\left\{\begin{array}{l}
+\dot{x}=v \cos (\theta) \\
+\dot{y}=v \sin (\theta) . \\
+\dot{\theta}=\omega
+\end{array} .\right.</script><p>离散形式：</p>
+<script type="math/tex; mode=display">
+\left\{\begin{array}{l}
+x\left(t_{i}^{c}\right)=x\left(t_{i-1}^{c}\right)+v\left(t_{i-1}^{c}\right) \cdot \cos \left(\theta\left(t_{i-1}^{c}\right)\right) \cdot T \\
+y\left(t_{i}^{c}\right)=y\left(t_{i-1}^{c}\right)+v\left(t_{i-1}^{c}\right) \cdot \sin \left(\theta\left(t_{i-1}^{c}\right)\right) \cdot T \\
+\theta\left(t_{i}^{c}\right)=\theta\left(t_{i-1}^{c}\right)+\omega\left(t_{i-1}^{c}\right) \cdot T
+\end{array}\right.</script><p>$T$为控制周期，控制目标为输出线速度$v$和角速度$\omega$使机器人趋近于目标姿态$p^<em>=[x^</em>,y^<em>,\theta^</em>]$，定义瞬时姿态误差$p_e=p^*-p=[x_e,y_e,\theta_e]$，控制器可以被表示为：</p>
+<script type="math/tex; mode=display">
+\left[\begin{array}{c}
+v \\
+\omega
+\end{array}\right]=\left[\begin{array}{l}
+u_{v}\left(p_{e}, \dot{p}_{e}\right) \\
+u_{\omega}\left(p_{e}, \dot{p}_{e}\right)
+\end{array}\right]</script><p>通过设计$ u_v和u_\omega<br>  $来控制线速度$v$和角速度$\omega$跟踪误差$\left|p_{e}\right|_{2}$趋近零。上式表示了nonholonomic机器人的一般一阶运动控制模型。</p>
+<p>考虑到nonholonomic的非线性特性，通常引入“hand”位置$h = [x_h,y_h]=[x+{d_h}cos\theta,y+{d_h}sin\theta]$来简化运动模型</p>
+<p>对于holonomic的机器人，可以直接输出$v_x,v_y$来控制运动。本文设计的智能攻击方法两种类型都适用，作者主要通过对nonholonomic机器人的攻击来阐述自己的工作，其结果可以很容易推广到nonholonomic机器人上。</p>
+<h2 id="3-避障行为建模"><a href="#3-避障行为建模" class="headerlink" title="3 避障行为建模"></a>3 避障行为建模</h2><p>用$p_{ob}和v_{ob}$分别表示障碍物的姿态和速度，考虑到避障行为主要由机器人与障碍物之间的相对姿态和运动决定，我们把避障行为表达成：</p>
+<script type="math/tex; mode=display">
+u_{ob}=f(p_{ob}-p,p^*-p.v_{ob},v)</script><p>$p^<em>$是由特定任务确定的瞬时期望姿态（例如编队控制任务中leader的目标姿态），在一些算法设计中，如果$p_{ob}$非常接近$p$，$p^</em>-p$将被忽略。在上式中的避障行为有两个性质:</p>
+<ul>
+<li>$f$是有界的，只有当障碍物出现在机器人的检测范围内才起作用。</li>
+</ul>
+<script type="math/tex; mode=display">
+\left\{\begin{array}{ll}
+\|f(\cdot)\|_{2}=0, & \text { if } p_{\mathrm{ob}} \notin \mathcal{A}_{d}(p) \\
+0 \leq\|f(\cdot)\|_{2} \leq \bar{u}_{o b}, & \text { if } p_{\mathrm{ob}} \in \mathcal{A}_{d}(p)
+\end{array}\right.</script><p>其中$\mathcal{A}_{d}(p)$表示$\mathrm{R}_{\mathrm{v}}$在$p$处的能够检测到障碍物的范围区域</p>
+<ul>
+<li>避障行为的方向性，$\mathcal{T}_{\vartheta}$表示把一个$X-Y$平面分成两个区域（$  \mathcal{T}_{\vartheta}^{+}和 \mathcal{T}_{\vartheta}^{-} $）的一条简单曲线，</li>
+</ul>
+<script type="math/tex; mode=display">
+\begin{array}{c}
+I_{T}\left(\mathcal{T}_{\vartheta}, p\right)=\left\{\begin{array}{ll}
+0, & \text { if } p \in \mathcal{T}_{\vartheta} \\
++1, & \text { if } p \in \mathcal{T}_{\vartheta}^{+} \\
+-1, & \text { if } p \in \mathcal{T}_{\vartheta}^{-}
+\end{array}\right. \\
+\end{array}</script><p>在k时刻障碍物出现在了机器人的检测范围内，$\mathcal{T}_{m}(p(k)$表示k时刻机器人瞬时运动的切线，那么k+1时刻机器人的位置应该朝远离障碍物的方向移动，即机器人以$\mathcal{T}_{m}(p(k)$为界向障碍物的另一侧移动，可以抽象成下面这个公式：</p>
+<script type="math/tex; mode=display">
+I_{T}\left(\mathcal{T}_{m}(p(k)), p_{o b}\right) \cdot I_{T}\left(\mathcal{T}_{m}(p(k)), p(k+1)\right)<0</script><p>在一些复杂情况下，避障建模有一些值得注意的地方：</p>
+<ul>
+<li>几何形状：在实际上，传感器将障碍物检测为一系列稠密点，避障行为基于按特定规则处理这些点。例如，它们可以用简单的凸面几何形状（例如一个圆）来表示，机器人以特定半径围绕其圆心移动。</li>
+<li>多障碍物：当涉及多个障碍物时，机器人需要评估它们综合的影响。在一些简单的情况下，机器人可以直接以最近的障碍物作为避障依据，可以始终保证安全的避让行为。</li>
+</ul>
+<p><strong>假设1：</strong>受害者机器人的避障检测范围是局部的，它使用的避障算法可以用上述模型建模，并且是单射（injective map）。此外，攻击机器人对受害者机器人的观测值受到高斯噪声的干扰。</p>
+<h2 id="4-问题描述"><a href="#4-问题描述" class="headerlink" title="4 问题描述"></a>4 问题描述</h2><p>本文工作适用于一个具有代表性的应用场景：$\text {R}_\text{v}$（受害者机器人）正在执行目标任务，并且能够通过$f$进行避障，$\text {R}_\text{a}$（攻击机器人）的目标是通过伪装成障碍物将$\text {R}_\text{v}$诱骗至预设陷阱$ p_t  $中，$\text {R}_\text{a}$还具有观察$\text {R}_\text{v}$的能力，在观察的过程中$\text {R}_\text{a}$的移动受限。将$\mathcal{J}$定义为反映$f$的观测数据，整个攻击问题可以转换成以下数学问题：</p>
+<p>（1）学习$f$：通过对$\text {R}_\text{v}$的观测数据$\mathcal{J}$，寻找体现$f$的映射关系$\phi$  by solving</p>
+<script type="math/tex; mode=display">
+\min _{\phi(\mathcal{J}) \mapsto f}\|f-\hat{f}\|_{2}</script><p>（2）攻击策略设计：给定$\hat{f}$，寻找一组攻击输入$\boldsymbol{u}_{a, 0: H}$，驱使$\mathrm{R}_{\mathrm{v}}$到预设陷阱$ p_t<br>  $ by solving</p>
+<script type="math/tex; mode=display">
+\mathbf{P}_{\mathbf{0}}: \min _{H, \boldsymbol{u}_{a, 0: H}} C_{\vartheta}\left(\boldsymbol{u}_{a, 0: H}\right)\\s.t. \quad\left\|p_{v}(H)-p_{t}\right\|_{2} \leq \delta</script><p>&#x20;        其中，$C_{\vartheta}$是攻击代价（例如攻击路径长度或活动周期），$\delta \geq 0$是攻击终止的条件</p>
+<p>对于问题（1），关键在于捕捉移动机器人在检测到障碍物后如何调整其轨迹的基本准则，并根据观测数据构建相应的数据集。对于问题（2），由于$f$的隐式形式，很难获得最优解析解。然而，借鉴基于抽样的方法[50]、[51]的思想，我们能够设计有效的算法，以获得不同攻击成本下的次优解。本文的整体框架如图2所示：</p>
+<p><img src="/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/image_jj8kziDnWA.png" alt></p>
+<h1 id="🏷️-避障机制的学习方案"><a href="#🏷️-避障机制的学习方案" class="headerlink" title="🏷️ 避障机制的学习方案"></a>🏷️ 避障机制的学习方案</h1><ul>
+<li><strong>预采样：</strong>理想情况下，可以在三个连续位置采样获得$\mathrm{R}_{\mathrm{v}}$的瞬时运动信息（例如朝向、线速度、角速度和加速度）。这是以下步骤的基础。</li>
+<li><strong>故意刺激：</strong>$\mathrm{R}_{\mathrm{a}}$伪装成障碍物主动接近$\mathrm{R}_{\mathrm{v}}$，故意刺激$\mathrm{R}_{\mathrm{v}}$，引导$\mathrm{R}_{\mathrm{v}}$产生各种避障行为，丰富观察结果，以了解其潜在的避障机制。</li>
+<li><strong>建模学习：</strong>基于激励试验收集的数据，$\mathrm{R}_{\mathrm{a}}$计算能够体现$\mathrm{R}_{\mathrm{v}}$避障行为的特征变量，并通过基于学习的方法（例如SVR、RRT）回归其潜在的避障机制。</li>
+</ul>
+<h2 id="1-预采样：数据获取"><a href="#1-预采样：数据获取" class="headerlink" title="1 预采样：数据获取"></a>1 预采样：数据获取</h2><p>将机器人在一个控制周期$T$内的轨迹近似为1条直线，设$\mathrm{R}_{\mathrm{a}}$的采样周期$\tilde{T}=N T$，经历3次连续的采样后，$\mathrm{R}_{\mathrm{v}}$的瞬时运动变量估计为：</p>
+<script type="math/tex; mode=display">
+\left\{\begin{array}{ll}v_{x, k+1}=\frac{x_{k+1}-x_{k}}{\tilde{T}}, & v_{y, k+1}=\frac{y_{k+1}-y_{k}}{\tilde{T}} \\ v_{k+1}=\sqrt{v_{x, k+1}^{2}+v_{y, k+1}^{2}}, & \theta_{k+1}=\arctan \frac{v_{y, k+1}}{v_{x, k+1}} \\ a_{k+1}=\frac{v_{k+1}-v_{k}}{\tilde{T}}, & \omega_{k+1}=\frac{\theta_{k+1}-\theta_{k}}{\tilde{T}}\end{array}\right.</script><p>对于holonomic机器人这步会更简单并且精度更高，在这里做一个统一声明，对于nonholonomic机器人，$v_{1}=v, v_{2}=\omega$；对于holonomic机器人，$v_{1}=v_x, v_{2}=v_y$</p>
+<p><em>Remark</em> 2：在实际中，运动控制周期$T$非常小（例如0.05 s或0.1s，采样周期$\tilde{T}$由$\mathrm{R}_{\mathrm{a}}$搭载的传感器决定。如果设置一个比较大的采样周期，并在一段短时间内（例如$T$）计算平均值可以大大降低观测噪声的影响。这不会影响以下对学习和攻击程序的分析。</p>
+<p>$\mathrm{R}_{\mathrm{a}}$需要先判断$\mathrm{R}_{\mathrm{v}}$属于哪种类型，可以通过检查其运动轨迹的顺滑程度来判断，holonomic机器人的速度方向可以突变，而nonholonomic机器人的运动方向遵守严格的运动学约束。基于上述公式，$\mathrm{R}_{\mathrm{a}}$可以随时获取$\mathrm{R}_{\mathrm{v}}$的瞬时运动信息。这构成了以下步骤的基础。</p>
+<h2 id="2-故意激励：轨迹试验"><a href="#2-故意激励：轨迹试验" class="headerlink" title="2 故意激励：轨迹试验"></a>2 故意激励：轨迹试验</h2><p><img src="/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/image_dcaiylI7N7.png" alt></p>
+<p><img src="/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/image_reGGMiCIUx.png" alt></p>
+<p>本文将$\mathrm{R}_{\mathrm{v}}$的障碍物检测区域模拟成扇形区域，将其参数化表达为$(D, \boldsymbol{\alpha})$。$\mathrm{R}_{\mathrm{a}}$通过相邻的两次观测计算$\mathrm{R}_{\mathrm{v}}$的位置变化$\Delta s$和朝向变化$\Delta \theta$。</p>
+<script type="math/tex; mode=display">
+\left\{\begin{array}{l}\Delta s(k)=\sqrt{\left(\Delta x_{k, k+1}\right)^{2}+\left(\Delta y_{k, k+1}\right)^{2}} \\ \Delta \theta(k)=\arctan \frac{\Delta y_{k, k+1}}{\Delta x_{k, k+1}}\end{array}\right.</script><p>$\mathrm{R}_{\mathrm{v}}$的目标点为$p_g$，在没有检测到障碍物时，$\mathrm{R}_{\mathrm{v}}$会径直地朝$p_g$运动，此时$\Delta \theta = 0$，因此当$\mathrm{R}_{\mathrm{a}}$进入$\mathrm{R}_{\mathrm{v}}$的检测范围后，$\Delta \theta \neq 0$。在$\mathrm{R}_{\mathrm{v}}$的朝向稳定后，$\mathrm{R}_{\mathrm{a}}$会记录其调整后的直接朝$p_g$运动的轨迹。</p>
+<p>在没有障碍物的情况，直接朝目标点运动（走直线）是最有效的，也有一些工作指定机器人沿着平滑曲线到达目标，我们可以利用经典的多项式拟合方法来近似$\mathrm{R}_{\mathrm{v}}$直接向目标点运动时的轨迹，设多项式的最高阶数为$n_p$，$\tilde{\boldsymbol{x}}=\left[x^{n_{p}}, x^{n_{p}-1}, \ldots, x^{0}\right]^{\top}$，$\boldsymbol{P} \in \mathbb{R}^{n_{p}+1}$是关于$\tilde{\boldsymbol{x}}$的系数向量，轨迹上的一个点可以建模为：</p>
+<script type="math/tex; mode=display">
+y=\boldsymbol{P}^{\top} \tilde{\boldsymbol{x}}+\eta</script><p>其中$ \eta  $是高斯噪声。为了简化，本文只考虑一阶轨迹（即直线）。假设一共记录了$n_z$组轨迹，其中第$l_{th}$个轨迹满足：</p>
+<script type="math/tex; mode=display">
+\mathcal{T}_{r}^{(l)}: y_{l j}=\boldsymbol{P}_{l} \tilde{\boldsymbol{x}}_{l j}+\eta_{l j}, j=1,2, \ldots, n_{t}</script><p>$n_t$是此轨迹中记录的观测数据的数目，令$d_{T}\left(\mathcal{T}_{\vartheta}, p\right)$表示从一个位置$p$到一个轨迹$\mathcal{T}_{\vartheta}$的最短距离，那么有以下结论：</p>
+<p><em>Theorem 1</em>（受害者的目标点$p_g$的位置估计）：给定轨迹$\mathcal{T}_{r}^{(l)}$中$n_t$个观测数据，当$n_{t} \rightarrow \infty$时，$\mathcal{T}_{r}^{(l)}$会经过$p_g$，即</p>
+<script type="math/tex; mode=display">
+\lim _{n_{t} \rightarrow \infty} d_{T}\left(\mathcal{T}_{r}^{(l)}, p_{g}\right)=0</script><p>给定$n_z$组轨迹$\left\{\mathcal{T}_{r}^{(l)}, l=1, \ldots, n_{z}\right\}$，设$\hat{p}_{g}\left(n_{z}\right)$为$p_g$的最小二乘估计量，当$n_{z} \rightarrow \infty$时，$p_g$可以被准确估计，即</p>
+<script type="math/tex; mode=display">
+\lim _{n_{z} \rightarrow \infty}\left\|\hat{p}_{g}\left(n_{z}\right)-p_{g}\right\|_{2}=0</script><p><em>Remark 3:</em> 定理1说明了记录的轨迹如何影响精度，每条轨迹中采样点的数量$n_t$决定了$p_g$与这条轨迹有多接近；获取的轨迹数量$n_z$决定了，$p_g$和估计值$\hat{p}_g$有多接近。</p>
+<h2 id="3-避障模型学习：基于SVR的方法"><a href="#3-避障模型学习：基于SVR的方法" class="headerlink" title="3 避障模型学习：基于SVR的方法"></a>3 避障模型学习：基于SVR的方法</h2><p>在上一步中，可以获取到$\mathrm{R}_{\mathrm{v}}$的检测范围$(D, \boldsymbol{\alpha})$和目标点$p_g$。在这步，$\mathrm{R}_{\mathrm{a}}$主动出现在$\mathrm{R}_{\mathrm{v}}$的检测范围中，并记录以下参数：$\mathrm{R}_{\mathrm{a}}$与$\mathrm{R}_{\mathrm{v}}$之间的相对距离$d_{va}$，相对方位角$\varphi_{r}$,$\mathrm{R}_{\mathrm{v}}$与$p_g$之间朝向偏差$\theta^{\prime}$。一旦$\mathrm{R}_{\mathrm{a}}$被$\mathrm{R}_{\mathrm{v}}$检测到，$\mathrm{R}_{\mathrm{a}}$在下一次采样周期中保存两组数据：</p>
+<script type="math/tex; mode=display">
+\left\{\begin{array}{l}Q_{\text {in }}(k)=\left[\theta^{\prime}(k), v_{1}(k), v_{2}(k), a(k), d_{v a}(k), \varphi_{r}(k)\right]^{\top} \\ Q_{\text {out }}(k)=[\Delta s(k), \Delta \theta(k)]^{\top}\end{array}\right.</script><p>避障机制数据集$\mathcal{J}$可以表示为：</p>
+<script type="math/tex; mode=display">
+\mathcal{J}=\left\{\bigcup_{k \in \mathcal{F}}\left\{Q_{\text {in }}(k), Q_{\text {out }}(k)\right\}\right\}\\\\where \mathcal{F}=\left\{k \in \mathbb{N}^{+}: d_{v a}(k) \leq D, \varphi_{r}(k) \in \boldsymbol{\alpha}\right\}</script><p>本文使用机器学习中的SVR方法来回归受害者机器人的避障机制，在数据量不大的情况下，具有良好的非线性回归性能和较强的泛化能力。作者指出由于在一个采样周期$\tilde{T}$内，$Q_{out}$的观测噪声会不断积累，所以该学习方法会在$\tilde{T} \rightarrow T$时达到最理想的性能。另外尽管学习得到的$\hat{f}$是从$Q_{in}$→$Q_{out}$的映射，但这个模型不一定是满射或单射，换句话说，我们不能通过$\hat{f}$从$Q_{out}$反推$Q_{in}$。</p>
+<p>不同避障算法的回归差异体现在回归模型的内部结构和参数上。通过$\mathrm{R}_{\mathrm{a}}$学习到受害者障碍机制，使其不依赖于强假设（攻击者从一开始就知道受害者的信息）。</p>
+<h1 id="🏷️攻击策略设计与分析"><a href="#🏷️攻击策略设计与分析" class="headerlink" title="🏷️攻击策略设计与分析"></a>🏷️攻击策略设计与分析</h1><h2 id="1-攻击思路与可行性分析"><a href="#1-攻击思路与可行性分析" class="headerlink" title="1 攻击思路与可行性分析"></a>1 攻击思路与可行性分析</h2><p>本文提出了两种攻击策略：<strong>最短路径攻击</strong>（shortest-path attack），<strong>放手攻击</strong>（Hand-off）。最短路径攻击旨在设计$\mathrm{R}_{\mathrm{a}}$最小的路径代价将$\mathrm{R}_{\mathrm{v}}$驱赶至预设陷阱，$\mathrm{R}_{\mathrm{a}}$此过程中始终处于活动状态，然而这在某些情况是不可取的，例如$\mathrm{R}_{\mathrm{v}}$如果长时间检测到附近有障碍物可能会导致其异常报警，甚至改变控制策略。为了减轻这些影响并使$\mathrm{R}_{\mathrm{a}}$的攻击过程更隐蔽，我们进一步提出了一种不干预的攻击策略，即”Hands-off”。“放手”是指在一段时间间隔内，对$\mathrm{R}_{\mathrm{v}}$的干预效果可以精确地保持为零，目的是获得最稀疏的控制或对$\mathrm{R}_{\mathrm{v}}$的最小主动干扰[56]，[57]。</p>
+<p>（后面的内容主要是关于攻击切入点的选取，和两种攻击算法的实现，攻击效果分析，直接看论文吧…</p>
+<h1 id="🏷️总结"><a href="#🏷️总结" class="headerlink" title="🏷️总结"></a>🏷️总结</h1><p>这篇文章的创新点在于提出了一种新颖的智能物理攻击框架。智能主要体现在攻击者可以主动在线学习被害者的避障策略，从而发动攻击，驱赶被害者到预设陷阱处。本文设计了两种攻击策略：最短路径攻击（优点在于攻击者的路径代价小，但攻击者一直处于活动状态），Hands-off攻击（优点在于攻击者的活动时间短，攻击更加隐蔽，但攻击路径成本更高）。本文与传统的追逃问题，羊群放牧问题具有一些相似之处，但基本的模型公式和应用场景又有较大差异，主要体现在：</p>
+<ul>
+<li>任务场景：本文提出的攻击方法旨在利用受害者的避障机制将其驱动到预设的陷阱位置。在追逃问题中，追捕者的目的是抓捕逃犯，其控制目标是紧密跟踪逃犯或对逃犯形成包围。</li>
+<li>模型知识：本文的最大的创新之处在于攻击者可以利用机器学习方法主动学习受害者的避障机制，然后利用所学模型设计攻击模式驱使其进入陷阱。而现有的大多数工作很少讨论关于模型知识的问题，例如，许多羊群放牧问题的工作都假定机器人的交互模型是事先已知的，而本文不需要提供先验知识，这也体现了智能。</li>
+<li>模型类型：本文提出的攻击框架不是针对受害者机器人的特定动态模型而专门定制的。追逃问题中机器人的动力学通常被建模为一个多智能体LTI系统。而在羊群问题中，其动力学模型通常具有特定的函数形式（例如势能函数），并且只取决于放牧机器人和羊群机器人的位置。</li>
+</ul>
+<p>一些问题：</p>
+<p>（1）这篇工作在学习受害者机器人的避障策略时，将其检测范围假设成一个扇形，并且学习的避障机制是作者事先规定的一组输入量到输出量之间的映射，这未免还是假设性太强了。</p>
+<p>（2）整套理论的基础都是基于无障碍的场景进行，其中避障机制的映射里没有关于障碍物的信息，只有与目标点之间的信息，是不是学习避障策略时就没有考虑有障碍的环境，而只是在理想的无障碍环境中进行主动观测。还有对于攻击切入点的选取，似乎也没有考虑障碍物的存在，但实物实验中又有障碍物，不知道这里面做了什么处理。整套理论对场景的假设太过理想了，实物实验的场景还是太干净了，这套理论是否强依赖于场景，如果换个场景是否要增加许多额外的处理，还能保证正常功能吗，我觉得这些是以后可以考虑解决的问题。</p>
+<p>（3）实物实验中，攻击机器人的运动速度明显快于受害机器人，在拦截这个动作本身上就占优势，如果两个机器人速度一样，或者受害者机器人的速度快于攻击机器人，那还能成功地完成驱赶吗？这个时候我觉得就可以体现协同的优势了，两辆机器人协同的话，我觉得是能够成功驱赶一个比他俩更快的受害机器人到达陷阱的。（思想主要来源于动物世界一群鬣狗可以群殴一头狮子）</p>
+<p>（4）因为需要对受害者机器人进行观测来计算其避障机制，这篇工作使用了屋顶的一个相机作为外部观察，配合二维码来提高观测精度。对于智能体来说，我们更加希望它能够有充分的自主智能，可不可以不依赖这些外部传感器，而仅依靠自身传感器来完成任务，甚至不需要对其运动和避障进行建模，仅获取必要的速度位置等信息，结合场景的地图结构来进行决策，快速完成驱赶任务。</p>
+<p>（5）学习避障机制和进行攻击是在不同周期下进行，也就意味着需要先观测一遍学完了才能进行攻击，在这个过程中机器人可能已经到达了目标点，这对于很多情况来说是不可取的，例如在战场上拦截一个十分危险的自爆机器人。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Fun</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/">http://example.com/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">JiaFan's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/sjtu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/12/30/Ubuntu%E4%B8%8BClash%E7%9A%84%E9%85%8D%E7%BD%AE/"><img class="prev-cover" src="/img/clash.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Ubuntu下Clash的配置</div></div></a></div><div class="next-post pull-right"><a href="/2022/06/25/%E9%9D%A2%E5%90%91RMUA2022%E6%AF%94%E8%B5%9B%E7%9A%84%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%A8%E5%90%91%E6%84%9F%E7%9F%A5%E7%B3%BB%E7%BB%9F/"><img class="next-cover" src="/img/rmua2022.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">面向RMUA2022比赛的移动机器人全向感知系统</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">V</span><span class="switch-btn"></span><span class="second-comment">a</span></div></div><div class="comment-wrap"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Fun</div><div class="author-info__description">踏踏实实做学问</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hitxjf" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xujiafan.hit@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent-Physical-Attack-Against-Mobile-Robots-With-Obstacle-Avoidance"><span class="toc-number">1.</span> <span class="toc-text">【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%EF%BC%9AIntelligent-Physical-Attack-Against-Mobile-Robots-With-Obstacle-Avoidance"><span class="toc-number">2.</span> <span class="toc-text">标题：Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E8%80%85%EF%BC%9A-Yushan-Li-et-al"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">作者： Yushan Li et al.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E6%9E%84%EF%BC%9A%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">机构：上海交通大学</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8F%E6%91%98%E8%A6%81"><span class="toc-number">3.</span> <span class="toc-text">🏷️摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8FIntroduction"><span class="toc-number">4.</span> <span class="toc-text">🏷️Introduction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8F%E4%B8%BB%E8%A6%81%E5%B7%A5%E4%BD%9C%E5%8F%8A%E8%B4%A1%E7%8C%AE"><span class="toc-number">5.</span> <span class="toc-text">🏷️主要工作及贡献</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8FRelated-Work"><span class="toc-number">6.</span> <span class="toc-text">🏷️Related Work</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-CPS-security-%E7%BD%91%E7%BB%9C%E7%89%A9%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-number">6.1.</span> <span class="toc-text">1 CPS security 网络物理系统的安全性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Obstacle-avoidance-mechanism-%E9%81%BF%E9%9A%9C%E6%9C%BA%E5%88%B6"><span class="toc-number">6.2.</span> <span class="toc-text">2 Obstacle-avoidance mechanism  避障机制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8F%E5%87%86%E5%A4%87%E4%B8%8E%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="toc-number">7.</span> <span class="toc-text">🏷️准备与问题描述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%AC%A6%E5%8F%B7%E5%AE%9A%E4%B9%89"><span class="toc-number">7.1.</span> <span class="toc-text">1 符号定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%BB%BA%E6%A8%A1"><span class="toc-number">7.2.</span> <span class="toc-text">2 移动机器人的运动控制建模</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%81%BF%E9%9A%9C%E8%A1%8C%E4%B8%BA%E5%BB%BA%E6%A8%A1"><span class="toc-number">7.3.</span> <span class="toc-text">3 避障行为建模</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="toc-number">7.4.</span> <span class="toc-text">4 问题描述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8F-%E9%81%BF%E9%9A%9C%E6%9C%BA%E5%88%B6%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%A1%88"><span class="toc-number">8.</span> <span class="toc-text">🏷️ 避障机制的学习方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%84%E9%87%87%E6%A0%B7%EF%BC%9A%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96"><span class="toc-number">8.1.</span> <span class="toc-text">1 预采样：数据获取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%95%85%E6%84%8F%E6%BF%80%E5%8A%B1%EF%BC%9A%E8%BD%A8%E8%BF%B9%E8%AF%95%E9%AA%8C"><span class="toc-number">8.2.</span> <span class="toc-text">2 故意激励：轨迹试验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%81%BF%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0%EF%BC%9A%E5%9F%BA%E4%BA%8ESVR%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">8.3.</span> <span class="toc-text">3 避障模型学习：基于SVR的方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8F%E6%94%BB%E5%87%BB%E7%AD%96%E7%95%A5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90"><span class="toc-number">9.</span> <span class="toc-text">🏷️攻击策略设计与分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%94%BB%E5%87%BB%E6%80%9D%E8%B7%AF%E4%B8%8E%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90"><span class="toc-number">9.1.</span> <span class="toc-text">1 攻击思路与可行性分析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8F%B7%EF%B8%8F%E6%80%BB%E7%BB%93"><span class="toc-number">10.</span> <span class="toc-text">🏷️总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/14/Ouster%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" title="Ouster激光雷达快速配置指南"><img src="/img/ouster.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ouster激光雷达快速配置指南"/></a><div class="content"><a class="title" href="/2023/02/14/Ouster%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" title="Ouster激光雷达快速配置指南">Ouster激光雷达快速配置指南</a><time datetime="2023-02-14T05:00:00.000Z" title="发表于 2023-02-14 13:00:00">2023-02-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/12/Mid-360%20%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" title="Mid-360 快速配置指南"><img src="/img/mid360.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Mid-360 快速配置指南"/></a><div class="content"><a class="title" href="/2023/02/12/Mid-360%20%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" title="Mid-360 快速配置指南">Mid-360 快速配置指南</a><time datetime="2023-02-12T10:00:00.000Z" title="发表于 2023-02-12 18:00:00">2023-02-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/01/15/%E4%BB%8E%E5%9C%BA%E5%9C%B0%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E7%82%B9%E4%BA%91%E5%9C%B0%E5%9B%BE/" title="从场地模型生成点云地图文件"><img src="/img/rm_map.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从场地模型生成点云地图文件"/></a><div class="content"><a class="title" href="/2023/01/15/%E4%BB%8E%E5%9C%BA%E5%9C%B0%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E7%82%B9%E4%BA%91%E5%9C%B0%E5%9B%BE/" title="从场地模型生成点云地图文件">从场地模型生成点云地图文件</a><time datetime="2023-01-15T05:00:00.000Z" title="发表于 2023-01-15 13:00:00">2023-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/30/Ubuntu%E4%B8%8BClash%E7%9A%84%E9%85%8D%E7%BD%AE/" title="Ubuntu下Clash的配置"><img src="/img/clash.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ubuntu下Clash的配置"/></a><div class="content"><a class="title" href="/2022/12/30/Ubuntu%E4%B8%8BClash%E7%9A%84%E9%85%8D%E7%BD%AE/" title="Ubuntu下Clash的配置">Ubuntu下Clash的配置</a><time datetime="2022-12-30T05:00:00.000Z" title="发表于 2022-12-30 13:00:00">2022-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/" title="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance"><img src="/img/sjtu.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance"/></a><div class="content"><a class="title" href="/2022/10/14/%E3%80%90%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E3%80%91Intelligent%20Physical%20Attack%20Against%20Mobile%20Robots%20With%20Obstacle-Avoidance/" title="【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance">【论文阅读】Intelligent Physical Attack Against Mobile Robots With Obstacle-Avoidance</a><time datetime="2022-10-14T10:00:00.000Z" title="发表于 2022-10-14 18:00:00">2022-10-14</time></div></div></div></div></div></div></main><footer id="footer" style="background: #778899"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Fun</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
